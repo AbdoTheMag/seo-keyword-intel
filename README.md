@@ -46,41 +46,42 @@ LOG_DIR=logs
 ## CLI usage
 
 Basic scrape:
-
+```
 python backend/scraper.py \
   --keywords-file keywords.txt \
   --out out.json
+```
 
 Limit items:
-
-
+```
 python backend/scraper.py \
   --keywords-file keywords.txt \
   --out out.json \
   --max-items 10
+```
 
 Use proxy:
-
+```
 python backend/scraper.py \
   --keywords-file keywords.txt \
   --out out.json \
   --proxy "http://user:pass@host:port"
-
+```
 
 API-first mode:
-
+```
 python backend/scraper.py --keywords-file keywords.txt --out out.json --api-first
-
+```
 
 Headless (higher block risk):
-
+```
 python backend/scraper.py --keywords-file keywords.txt --out out.json --headless
+```
 
 ## Output
 
 `out.json` is a list of records:
-
-
+```
 {
   "keyword": "...",
   "title": "...",
@@ -91,6 +92,7 @@ python backend/scraper.py --keywords-file keywords.txt --out out.json --headless
   "blocked": false,
   "debug_path": null
 }
+```
 
 If blocked, `debug_path` points to saved HTML in `debug/`.
 
@@ -100,7 +102,7 @@ Open `debug/*.html` to confirm recaptcha, unusual-traffic, cloudflare, or empty 
 Retry with residential proxy.
 
 # requirements.txt
-
+```
 selenium>=4.22.0
 webdriver-manager>=4.0.1
 requests>=2.31.0
@@ -110,4 +112,5 @@ python-dotenv>=1.0.1
 fake-useragent>=1.5.1
 lxml>=5.2.1
 urllib3>=2.2.1
+```
 
