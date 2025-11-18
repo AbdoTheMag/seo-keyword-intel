@@ -24,7 +24,7 @@ source .venv/bin/activate
 windows:
 .venv\Scripts\activate
 
-pip install -r requirements.txt
+pip install -r backend/requirements.txt
 ````
 
 install chrome-for-testing:
@@ -134,6 +134,7 @@ FastAPI server exposing scrape + cluster routes, `utils.py` and `clusterer.py` f
 
 Project tooling
 Adding `package.json`, `vite.config.js`, and `tsconfig.json` to support the React frontend build.
+
 
 
 
