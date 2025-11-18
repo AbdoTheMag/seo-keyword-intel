@@ -17,7 +17,13 @@ the scraper's features include:
 
 ```
 python -m venv .venv
+
+linux/macOS:
 source .venv/bin/activate
+
+windows:
+.venv\Scripts\activate
+
 pip install -r requirements.txt
 ````
 
@@ -114,5 +120,6 @@ fake-useragent>=1.5.1
 lxml>=5.2.1
 urllib3>=2.2.1
 ```
+
 
 
