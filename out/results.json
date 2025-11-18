@@ -1,0 +1,102 @@
+[
+  {
+    "keyword": "computers",
+    "title": "Refine results",
+    "snippet": "",
+    "url": "/search?q=computers+under+$300&hl=en&gl=us&shoprs=CAESDRILEQAAAACj4bFBGAEYBSoJY29tcHV0ZXJzMiMIBRIKVW5kZXIgJDMwMBgCIg0SCxEAAAAAo-GxQRgBKgIYAVi5uCBgAg&sa=X&ved=2ahUKEwjFjJfnjvuQAxWJ2DgGHfanMX8Q268JKAB6BAgoEAc",
+    "position": 1,
+    "source": "selenium",
+    "blocked": false,
+    "debug_path": null
+  },
+  {
+    "keyword": "computers",
+    "title": "Computers & Tablets",
+    "snippet": "Shop at Best Buy for computers and tablets. Find laptops, desktops, all-in-one computers , monitors, tablets and more.",
+    "url": "https://www.bestbuy.com/site/electronics/computers-pcs/abcat0500000.c?id=abcat0500000",
+    "position": 2,
+    "source": "selenium",
+    "blocked": false,
+    "debug_path": null
+  },
+  {
+    "keyword": "computers",
+    "title": "Computers & Tablets",
+    "snippet": "Shop at Best Buy for computers and tablets. Find laptops, desktops, all-in-one computers , monitors, tablets and more.",
+    "url": "https://www.bestbuy.com/site/electronics/computers-pcs/abcat0500000.c?id=abcat0500000",
+    "position": 3,
+    "source": "selenium",
+    "blocked": false,
+    "debug_path": null
+  },
+  {
+    "keyword": "computers",
+    "title": "Laptops in Computers, Laptops and Tablets (1000+)",
+    "snippet": "Industry solutions · Laptop Savings · Shop Tech Gifts · Get it Today · Laptop Editors' Picks · Windows Laptops · Gaming Laptops · MacBooks · Essential Laptops.",
+    "url": "https://www.walmart.com/browse/electronics/laptops/3944_1089430_3951",
+    "position": 4,
+    "source": "selenium",
+    "blocked": false,
+    "debug_path": null
+  },
+  {
+    "keyword": "computers",
+    "title": "Computer",
+    "snippet": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation).",
+    "url": "https://en.wikipedia.org/wiki/Computer",
+    "position": 5,
+    "source": "selenium",
+    "blocked": false,
+    "debug_path": null
+  },
+  {
+    "keyword": "computers",
+    "title": "Computers for Sale: PC Computers & More",
+    "snippet": "Micro Center sells PC desktops, laptops, tablets, 2-in-1s, gaming PCs, mini PCs, all-in-ones, and Mac products like iMacs and MacBooks.",
+    "url": "https://www.microcenter.com/site/products/computers.aspx",
+    "position": 6,
+    "source": "selenium",
+    "blocked": false,
+    "debug_path": null
+  },
+  {
+    "keyword": "computers",
+    "title": "Electronics: Computer Accessories & Peripherals, Tablet ...",
+    "snippet": "Shop a wide selection of laptops, tablets, desktop computers , and accessories on Amazon.com from top brands including Apple, HP, Dell, and more.",
+    "url": "https://www.amazon.com/computer-pc-hardware-accessories-add-ons/b?ie=UTF8&node=541966",
+    "position": 7,
+    "source": "selenium",
+    "blocked": false,
+    "debug_path": null
+  },
+  {
+    "keyword": "computers",
+    "title": "Classes of computers - Wikipedia",
+    "snippet": "",
+    "url": "https://en.wikipedia.org/wiki/Classes_of_computers",
+    "position": 8,
+    "source": "selenium",
+    "blocked": false,
+    "debug_path": null
+  },
+  {
+    "keyword": "computers",
+    "title": "Classes of computers - Wikipedia",
+    "snippet": "",
+    "url": "https://en.wikipedia.org/wiki/Classes_of_computers",
+    "position": 9,
+    "source": "selenium",
+    "blocked": false,
+    "debug_path": null
+  },
+  {
+    "keyword": "computers",
+    "title": "Classes of computers - Wikipedia",
+    "snippet": "",
+    "url": "https://en.wikipedia.org/wiki/Classes_of_computers",
+    "position": 10,
+    "source": "selenium",
+    "blocked": false,
+    "debug_path": null
+  }
+]
