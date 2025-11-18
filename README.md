@@ -1,6 +1,6 @@
-````
-# serp-scraper
 
+# Serp-scraper
+```
 Google SERP scraper with block-detection and optional API fallback.
 the scraper's features include:
 - Headful Selenium using Chrome-for-Testing binary when available
@@ -11,10 +11,11 @@ the scraper's features include:
 - Exponential backoff retries via tenacity
 - Fallback to SerpAPI or Google CSE when blocked (if API key present)
 - CLI entrypoint and JSON output
+```
 
 ## Install in a python enviroment
 
-```bash
+```
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -113,4 +114,5 @@ fake-useragent>=1.5.1
 lxml>=5.2.1
 urllib3>=2.2.1
 ```
+
 
