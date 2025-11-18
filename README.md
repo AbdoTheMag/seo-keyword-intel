@@ -122,4 +122,18 @@ urllib3>=2.2.1
 ```
 
 
+## Roadmap (In Development)
+
+the project is at version 1.0 right now, planned additions include:
+
+Frontend integration (`frontend/`)
+Interactive UI built with React + Vite (`App.jsx`, `main.jsx`, `index.html`).
+
+Backend entrypoint (`main.py`)
+FastAPI server exposing scrape + cluster routes, `utils.py` and `clusterer.py` for better future development
+
+Project tooling
+Adding `package.json`, `vite.config.js`, and `tsconfig.json` to support the React frontend build.
+
+
 
