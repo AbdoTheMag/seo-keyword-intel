@@ -1,0 +1,251 @@
+2025-11-18 12:56:35,417 INFO Scraping keyword: dog
+2025-11-18 12:56:35,417 INFO Fetching SERP headful for dog (proxy=False)
+2025-11-18 12:56:35,418 INFO ====== WebDriver manager ======
+2025-11-18 12:56:36,125 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 12:56:36,158 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 12:56:36,193 INFO Driver [C:\Users\acerl\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-18 12:56:59,816 INFO Wrote 10 records to data/raw/keyword.json
+2025-11-18 12:58:54,811 INFO Scraping keyword: mermaid
+2025-11-18 12:58:54,811 INFO Fetching SERP headful for mermaid (proxy=False)
+2025-11-18 12:58:54,812 INFO ====== WebDriver manager ======
+2025-11-18 12:58:55,506 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 12:58:55,545 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 12:58:55,580 INFO Driver [C:\Users\acerl\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-18 12:59:18,558 INFO Wrote 10 records to data/raw/keyword.json
+2025-11-18 14:44:16,519 INFO Scraping keyword: computers
+2025-11-18 14:44:16,519 INFO Fetching SERP headful for computers (proxy=True)
+2025-11-18 14:44:16,520 WARNING Headless mode requested; headless mode increases block risk.
+2025-11-18 14:44:16,520 INFO Using proxy: http://user:pass@host:port
+2025-11-18 14:44:16,521 ERROR Exception during headful fetch for computers: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+Traceback (most recent call last):
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 65, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: /path/to/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 348, in fetch_serp_headful
+    driver = make_chrome_driver(headless=headless, proxy=proxy, user_agent=user_agent, chromedriver_path=chromedriver_path)
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 207, in make_chrome_driver
+    driver = webdriver.Chrome(service=service, options=opts)
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    if finder.get_browser_path():
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 48, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 79, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-11-18 14:44:18,379 INFO Fetching SERP headful for computers (proxy=True)
+2025-11-18 14:44:18,379 WARNING Headless mode requested; headless mode increases block risk.
+2025-11-18 14:44:18,379 INFO Using proxy: http://user:pass@host:port
+2025-11-18 14:44:18,380 ERROR Exception during headful fetch for computers: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+Traceback (most recent call last):
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 65, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: /path/to/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 348, in fetch_serp_headful
+    driver = make_chrome_driver(headless=headless, proxy=proxy, user_agent=user_agent, chromedriver_path=chromedriver_path)
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 207, in make_chrome_driver
+    driver = webdriver.Chrome(service=service, options=opts)
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    if finder.get_browser_path():
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 48, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 79, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-11-18 14:44:21,168 INFO Fetching SERP headful for computers (proxy=True)
+2025-11-18 14:44:21,168 WARNING Headless mode requested; headless mode increases block risk.
+2025-11-18 14:44:21,168 INFO Using proxy: http://user:pass@host:port
+2025-11-18 14:44:21,169 ERROR Exception during headful fetch for computers: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+Traceback (most recent call last):
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 65, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: /path/to/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 348, in fetch_serp_headful
+    driver = make_chrome_driver(headless=headless, proxy=proxy, user_agent=user_agent, chromedriver_path=chromedriver_path)
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 207, in make_chrome_driver
+    driver = webdriver.Chrome(service=service, options=opts)
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    if finder.get_browser_path():
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 48, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 79, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-11-18 14:44:25,170 INFO Fetching SERP headful for computers (proxy=True)
+2025-11-18 14:44:25,170 WARNING Headless mode requested; headless mode increases block risk.
+2025-11-18 14:44:25,170 INFO Using proxy: http://user:pass@host:port
+2025-11-18 14:44:25,171 ERROR Exception during headful fetch for computers: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+Traceback (most recent call last):
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 65, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: /path/to/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 348, in fetch_serp_headful
+    driver = make_chrome_driver(headless=headless, proxy=proxy, user_agent=user_agent, chromedriver_path=chromedriver_path)
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 207, in make_chrome_driver
+    driver = webdriver.Chrome(service=service, options=opts)
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    if finder.get_browser_path():
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 48, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 79, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-11-18 14:45:04,287 INFO Scraping keyword: computers
+2025-11-18 14:45:04,288 INFO Fetching SERP headful for computers (proxy=False)
+2025-11-18 14:45:04,288 WARNING Headless mode requested; headless mode increases block risk.
+2025-11-18 14:45:04,289 ERROR Exception during headful fetch for computers: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+Traceback (most recent call last):
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 65, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: /path/to/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 348, in fetch_serp_headful
+    driver = make_chrome_driver(headless=headless, proxy=proxy, user_agent=user_agent, chromedriver_path=chromedriver_path)
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 207, in make_chrome_driver
+    driver = webdriver.Chrome(service=service, options=opts)
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    if finder.get_browser_path():
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 48, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 79, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-11-18 14:45:06,009 INFO Fetching SERP headful for computers (proxy=False)
+2025-11-18 14:45:06,009 WARNING Headless mode requested; headless mode increases block risk.
+2025-11-18 14:45:06,009 ERROR Exception during headful fetch for computers: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+Traceback (most recent call last):
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 65, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: /path/to/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 348, in fetch_serp_headful
+    driver = make_chrome_driver(headless=headless, proxy=proxy, user_agent=user_agent, chromedriver_path=chromedriver_path)
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 207, in make_chrome_driver
+    driver = webdriver.Chrome(service=service, options=opts)
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    if finder.get_browser_path():
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 48, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 79, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-11-18 14:50:26,811 INFO Scraping keyword: computers
+2025-11-18 14:50:26,811 INFO Fetching SERP headful for computers (proxy=False)
+2025-11-18 14:50:26,811 WARNING Headless mode requested; headless mode increases block risk.
+2025-11-18 14:50:26,812 ERROR Exception during headful fetch for computers: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+Traceback (most recent call last):
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 65, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: /path/to/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 348, in fetch_serp_headful
+    driver = make_chrome_driver(headless=headless, proxy=proxy, user_agent=user_agent, chromedriver_path=chromedriver_path)
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 207, in make_chrome_driver
+    driver = webdriver.Chrome(service=service, options=opts)
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    if finder.get_browser_path():
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 48, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 79, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-11-18 14:50:28,163 INFO Fetching SERP headful for computers (proxy=False)
+2025-11-18 14:50:28,163 WARNING Headless mode requested; headless mode increases block risk.
+2025-11-18 14:50:28,163 ERROR Exception during headful fetch for computers: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+Traceback (most recent call last):
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 65, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: /path/to/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 348, in fetch_serp_headful
+    driver = make_chrome_driver(headless=headless, proxy=proxy, user_agent=user_agent, chromedriver_path=chromedriver_path)
+  File "C:\Users\acerl\Documents\seo keyword intel\backend\scraper.py", line 207, in make_chrome_driver
+    driver = webdriver.Chrome(service=service, options=opts)
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    if finder.get_browser_path():
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 48, in get_browser_path
+    return self._binary_paths()["browser_path"]
+  File "C:\Users\acerl\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\driver_finder.py", line 79, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-11-18 14:50:36,587 INFO Scraping keyword: computers
+2025-11-18 14:50:36,587 INFO Fetching SERP headful for computers (proxy=False)
+2025-11-18 14:50:36,588 WARNING Headless mode requested; headless mode increases block risk.
+2025-11-18 14:50:36,588 INFO ====== WebDriver manager ======
+2025-11-18 14:50:37,328 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 14:50:37,369 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 14:50:37,400 INFO Driver [C:\Users\acerl\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-18 14:51:01,739 INFO Wrote 10 records to out/results.json
+2025-11-18 14:52:19,403 INFO Scraping keyword: computers
+2025-11-18 14:52:19,403 INFO Fetching SERP headful for computers (proxy=False)
+2025-11-18 14:52:19,403 WARNING Headless mode requested; headless mode increases block risk.
+2025-11-18 14:52:19,404 INFO ====== WebDriver manager ======
+2025-11-18 14:52:20,125 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 14:52:20,158 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 14:52:20,193 INFO Driver [C:\Users\acerl\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-18 14:52:42,849 INFO Wrote 10 records to out/results.json
+2025-11-18 14:53:39,257 INFO Scraping keyword: computers
+2025-11-18 14:53:39,257 INFO Fetching SERP headful for computers (proxy=False)
+2025-11-18 14:53:39,257 INFO ====== WebDriver manager ======
+2025-11-18 14:53:40,061 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 14:53:40,093 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 14:53:40,126 INFO Driver [C:\Users\acerl\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-18 14:54:04,977 INFO Wrote 10 records to out/results.json
+2025-11-18 15:53:35,025 INFO Scraping keyword: computers
+2025-11-18 15:53:35,025 INFO Fetching SERP headful for computers (proxy=False)
+2025-11-18 15:53:35,026 INFO ====== WebDriver manager ======
+2025-11-18 15:53:35,819 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 15:53:36,035 INFO Get LATEST chromedriver version for google-chrome
+2025-11-18 15:53:36,067 INFO Driver [C:\Users\acerl\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-18 15:53:58,659 INFO Wrote 10 records to out.json

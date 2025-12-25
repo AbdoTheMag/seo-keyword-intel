@@ -1,140 +1,171 @@
+# Keyword Intelligence — SERP scraper + cluster (FastAPI + React)
 
-# Serp-scraper
-```
-Google SERP scraper with block-detection and optional API fallback.
-the scraper's features include:
-- Headful Selenium using Chrome-for-Testing binary when available
-- UA rotation, viewport randomization
-- Optional residential proxy integration via env / CLI
-- Human-like scrolling / waits
-- Challenge detection (CAPTCHA / interstitial)
-- Exponential backoff retries via tenacity
-- Fallback to SerpAPI or Google CSE when blocked (if API key present)
-- CLI entrypoint and JSON output
-```
+Pragmatic, production-minded toolchain: defensive Google SERP scraper (Selenium headful, UA rotation, viewport jitter, human pacing, proxy support), TF-IDF → SVD → k-means clusterer with exemplars and top-terms, FastAPI backend, modern React + Vite frontend.
 
-## Install in a python enviroment
+---
 
-```
+## to use the program;
+
+1. Clone repo
+2. Create and activate Python venv
+3. Install backend deps
+4. (Optional, recommended) install Node and chrome-for-testing
+5. Configure `.env`
+6. Run the backend (`uvicorn`) and frontend (`npm run dev`) in command prompt.
+
+---
+
+## Install (backend)
+
+```bash
 python -m venv .venv
-
-linux/macOS:
+# mac / linux
 source .venv/bin/activate
+# windows (powershell)
+# .venv\Scripts\Activate.ps1
 
-windows:
-.venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-pip install -r backend/requirements.txt
-````
+---
 
-install chrome-for-testing:
+## chrome-for-testing (recommended)
+
+Use a stable official chrome binary to reduce false positives.
 
 ```bash
 npm install -g @puppeteer/browsers
 browsers install chrome@stable
 ```
 
-## Env
+---
 
-Copy `.env.example` → `.env` and fill keys:
+## `.env`
+
+Copy `examples/.env.example` → `.env` (or export env vars).
+
+variables:
 
 ```
-SERP_API_KEY=
-GOOGLE_CSE_KEY=
-GOOGLE_CSE_CX=
-CHROME_BINARY_PATH=
-CHROMEDRIVER_PATH=
-PROXY=
-UA_POOL_FILE=
+# API fallbacks (optional)
+SERP_API_KEY=         # SerpAPI key (preferred fallback)
+GOOGLE_CSE_KEY=       # Google Custom Search API key (fallback)
+GOOGLE_CSE_CX=        # Custom Search Engine ID
+
+# Chrome / driver (optional)
+CHROME_BINARY_PATH=   # path to chrome-for-testing binary
+CHROMEDRIVER_PATH=    # explicit chromedriver path (if needed)
+
+# Proxy (optional, recommended for scale)
+PROXY=http://user:pass@host:port
+
+# Overrides
+UA_POOL_FILE=         # optional file (one UA per line)
 DEBUG_DIR=debug
 LOG_DIR=logs
 ```
 
-## CLI usage
+---
 
-Basic scrape:
-```
-python backend/scraper.py \
-  --keywords-file keywords.txt \
-  --out out.json
-```
+## Run backend
 
-Limit items:
-```
-python backend/scraper.py \
-  --keywords-file keywords.txt \
-  --out out.json \
-  --max-items 10
+Development:
+
+```bash
+# from repo root
+uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-Use proxy:
-```
-python backend/scraper.py \
-  --keywords-file keywords.txt \
-  --out out.json \
-  --proxy "http://user:pass@host:port"
+CLI mode (single-run clustering):
+
+```bash
+python -m backend.main --keywords "dog food,best dog food" --per_keyword 5
 ```
 
-API-first mode:
-```
-python backend/scraper.py --keywords-file keywords.txt --out out.json --api-first
-```
+Notes:
 
-Headless (higher block risk):
-```
-python backend/scraper.py --keywords-file keywords.txt --out out.json --headless
-```
+`--headless` allowed but increases block risk.
+Use the `--proxy` command to pass a proxy string on CLI
+`--api-first` will give you SERP APIs if keys are present.
 
-## Output
+---
 
-`out.json` is a list of records:
-```
-{
-  "keyword": "...",
-  "title": "...",
-  "snippet": "...",
-  "url": "...",
-  "position": 1,
-  "source": "selenium|serpapi|google_cse|blocked",
-  "blocked": false,
-  "debug_path": null
-}
+## Endpoints
+
+`GET /ping`
+`POST /api/scrape` - the body looks like: `{ "keyword": "..." }` - which returns the unified SERP records for one keyword.
+`POST /api/cluster` - gives the full clustering payload (meta, top_terms, exemplars, results).
+* `GET /download/csv` and `GET /download/json` - download latest processed exports.
+
+---
+
+## JSON output
+
+Successful `/api/cluster` gives you the json with the clustering metadata, cluster contents & hits and full results array.
+
 ```
 
-If blocked, `debug_path` points to saved HTML in `debug/`.
+`debug_path` points to saved HTML in `debug/` when the scraper detects a block.
 
-## Debug
+---
 
-Open `debug/*.html` to confirm recaptcha, unusual-traffic, cloudflare, or empty DOM.
-Retry with residential proxy.
+## Frontend
 
-# requirements.txt
-```
-selenium>=4.22.0
-webdriver-manager>=4.0.1
-requests>=2.31.0
-beautifulsoup4>=4.12.2
-tenacity>=8.2.2
-python-dotenv>=1.0.1
-fake-useragent>=1.5.1
-lxml>=5.2.1
-urllib3>=2.2.1
+```bash
+cd frontend
+npm install
+npm run dev
+# open http://localhost:5173
 ```
 
+Build static assets:
 
-## Roadmap (In Development)
+```bash
+npm run build
+```
 
-the project is at version 1.0 right now, planned additions include:
+Frontend features:
 
-Frontend integration (`frontend/`)
-Interactive UI built with React + Vite (`App.jsx`, `main.jsx`, `index.html`).
-
-Backend entrypoint (`main.py`)
-FastAPI server exposing scrape + cluster routes, `utils.py` and `clusterer.py` for better future development
-
-Project tooling
-Adding `package.json`, `vite.config.js`, and `tsconfig.json` to support the React frontend build.
+* modern responsive layout, cluster cards, exemplars, export CSV.
+* charts-ready output and clearly visible silhouette/cluster stats.
 
 
+---
 
+## Proxy, headless, and blocking guidance
 
+* **Proxy**: use residential or mobile proxy provider when scraping at scale. Pass via `PROXY` env or `--proxy` CLI. Rotate IPs periodically.
+* **Headless**: its better to run headful Chrome. Headless increases detection risk.
+* **Chrome-for-Testing**: reduces environment mismatches; install via `@puppeteer/browsers`.
+* **Rate control**: the scraper uses human-like waits and retries; reduce concurrency and add jitter to avoid flags.
+
+---
+
+## Debugging blocks
+
+1. look through `debug/<keyword>_<ts>.html`. Look for: `recaptcha`, `unusual traffic`, `cloudflare`, or blank DOM.
+2. If challenge present try:
+run a manual browser from the same proxy IP and confirm SERP,
+change to a fresh residential IP,
+enable API fallback (SERP_API_KEY or Google CSE).
+3. If DOM is present but selectors failed, paste 200 lines of the debug HTML for diagnosis.
+
+---
+
+## notes
+
+* For stable, high-volume pipelines use licensed SERP APIs (SerpAPI or Google CSE).
+* Keep UA pool moderate and rotate per session.
+* Persist `data/raw/` and `data/processed/` to durable storage if running on VM.
+* Add a robust proxy-rotator and queue to scale safely.
+* Add monitoring on `logs/scraper.log` and alert on spikes of `blocked` results.
+
+---
+
+## Testing & CI
+
+* Unit-test `backend/clusterer.py`: top-terms, exemplar indices, silhouette fallback
+* CI: run `pytest` and linting
+* optionally you can add a lightweight integration test that runs cluster on a small canned JSON (no live scraping)
+
+---

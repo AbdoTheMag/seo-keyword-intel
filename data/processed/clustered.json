@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "keywords": [
+      "university al madina international malaysia"
+    ],
+    "per_keyword": 15,
+    "k": 4,
+    "cluster_labels": {
+      "0": "for international / for / 2026",
+      "1": "university wikipedia / wikipedia / madinah",
+      "2": "madinah / al / al madinah",
+      "3": "honors / university honors / the ceo"
+    },
+    "silhouette": 0.8587086031515915
+  },
+  "top_terms": {
+    "0": [
+      "for international",
+      "for",
+      "2026",
+      "2026 guide",
+      "best",
+      "best universities",
+      "malaysia for",
+      "international students"
+    ],
+    "1": [
+      "university wikipedia",
+      "wikipedia",
+      "madinah",
+      "university",
+      "al madinah",
+      "al",
+      "madinah international",
+      "international university"
+    ],
+    "2": [
+      "madinah",
+      "al",
+      "al madinah",
+      "university",
+      "madinah international",
+      "international university",
+      "200501028218 710353",
+      "2025 al"
+    ],
+    "3": [
+      "honors",
+      "university honors",
+      "the ceo",
+      "honors outstanding",
+      "outstanding",
+      "ceo of",
+      "of al",
+      "ceo"
+    ]
+  },
+  "exemplars": {
+    "0": [
+      {
+        "text": "15 Best Universities in Malaysia for International Students (2026 Guide) — 15 Best Universities in Malaysia for International Students (2026 Guide)",
+        "url": "https://www.easyuni.com/advice/universities-in-malaysia-for-international-students-3122/",
+        "domain": "easyuni.com",
+        "position": 5,
+        "distance": 1.11097662818054e-16
+      },
+      {
+        "text": "15 Best Universities in Malaysia for International Students (2026 Guide) — 15 Best Universities in Malaysia for International Students (2026 Guide)",
+        "url": "https://www.easyuni.com/advice/universities-in-malaysia-for-international-students-3122/",
+        "domain": "easyuni.com",
+        "position": 6,
+        "distance": 1.11097662818054e-16
+      },
+      {
+        "text": "15 Best Universities in Malaysia for International Students (2026 Guide) — 15 Best Universities in Malaysia for International Students (2026 Guide)",
+        "url": "https://www.easyuni.com/advice/universities-in-malaysia-for-international-students-3122/",
+        "domain": "easyuni.com",
+        "position": 7,
+        "distance": 1.11097662818054e-16
+      }
+    ],
+    "1": [
+      {
+        "text": "Al-Madinah International University - Wikipedia — Al-Madinah International University - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Al-Madinah_International_University#:~:text=MEDIU%20is%20licensed%20by%20the,with%20international%20level%20of%20excellence.",
+        "domain": "en.wikipedia.org",
+        "position": 10,
+        "distance": 0.2632949127176362
+      },
+      {
+        "text": "Al-Madinah International University - Wikipedia — Al-Madinah International University - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Al-Madinah_International_University#:~:text=MEDIU%20is%20licensed%20by%20the,with%20international%20level%20of%20excellence.",
+        "domain": "en.wikipedia.org",
+        "position": 11,
+        "distance": 0.2632949127176362
+      },
+      {
+        "text": "Al-Madinah International University - Wikipedia — Al-Madinah International University - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Al-Madinah_International_University#:~:text=MEDIU%20is%20licensed%20by%20the,with%20international%20level%20of%20excellence.",
+        "domain": "en.wikipedia.org",
+        "position": 12,
+        "distance": 0.2632949127176362
+      }
+    ],
+    "2": [
+      {
+        "text": "Al-Madinah International University – Your Gateway To ... — Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved.",
+        "url": "https://www.mediu.edu.my/",
+        "domain": "mediu.edu.my",
+        "position": 1,
+        "distance": 1.1102230246251565e-16
+      },
+      {
+        "text": "Al-Madinah International University – Your Gateway To ... — Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved.",
+        "url": "https://www.mediu.edu.my/",
+        "domain": "mediu.edu.my",
+        "position": 2,
+        "distance": 1.1102230246251565e-16
+      },
+      {
+        "text": "Al-Madinah International University – Your Gateway To ... — Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved.",
+        "url": "https://www.mediu.edu.my/",
+        "domain": "mediu.edu.my",
+        "position": 3,
+        "distance": 1.1102230246251565e-16
+      }
+    ],
+    "3": [
+      {
+        "text": "The CEO of Al-Madinah International University Honors Outstanding ... — The CEO of Al-Madinah International University Honors Outstanding ...",
+        "url": "https://www.mediu.edu.my/ceo-of-al-madinah-international-university-honors-outstanding-employees/#:~:text=On%20Thursday%2C%20August%2029%2C%202024,outside%20of%20Malaysia%20via%20Zoom.",
+        "domain": "mediu.edu.my",
+        "position": 14,
+        "distance": 1.089470499013156e-33
+      },
+      {
+        "text": "The CEO of Al-Madinah International University Honors Outstanding ... — The CEO of Al-Madinah International University Honors Outstanding ...",
+        "url": "https://www.mediu.edu.my/ceo-of-al-madinah-international-university-honors-outstanding-employees/#:~:text=On%20Thursday%2C%20August%2029%2C%202024,outside%20of%20Malaysia%20via%20Zoom.",
+        "domain": "mediu.edu.my",
+        "position": 15,
+        "distance": 1.089470499013156e-33
+      }
+    ]
+  },
+  "results": [
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "Al-Madinah International University – Your Gateway To ...",
+      "snippet": "Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved. Ministry of Higher Education ...",
+      "excerpt": "Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved.",
+      "url": "https://www.mediu.edu.my/",
+      "domain": "mediu.edu.my",
+      "position": 1,
+      "text": "Al-Madinah International University – Your Gateway To ... Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved. Ministry of Higher Education ...",
+      "cluster": 2
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "Al-Madinah International University – Your Gateway To ...",
+      "snippet": "Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved. Ministry of Higher Education ...",
+      "excerpt": "Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved.",
+      "url": "https://www.mediu.edu.my/",
+      "domain": "mediu.edu.my",
+      "position": 2,
+      "text": "Al-Madinah International University – Your Gateway To ... Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved. Ministry of Higher Education ...",
+      "cluster": 2
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "Al-Madinah International University – Your Gateway To ...",
+      "snippet": "Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved. Ministry of Higher Education ...",
+      "excerpt": "Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved.",
+      "url": "https://www.mediu.edu.my/",
+      "domain": "mediu.edu.my",
+      "position": 3,
+      "text": "Al-Madinah International University – Your Gateway To ... Copyright © 2025 Al - Madinah International University ( Malaysia ) Sdn. Bhd. 200501028218 (710353-P) DU017(B). All Rights Reserved. Ministry of Higher Education ...",
+      "cluster": 2
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "Al-Madinah International University",
+      "snippet": "It is one of the top five online universities in Malaysia . MEDIU offers academic programs on campus and online.",
+      "excerpt": "It is one of the top five online universities in Malaysia . MEDIU offers academic programs on campus and online.",
+      "url": "https://en.wikipedia.org/wiki/Al-Madinah_International_University",
+      "domain": "en.wikipedia.org",
+      "position": 4,
+      "text": "Al-Madinah International University It is one of the top five online universities in Malaysia . MEDIU offers academic programs on campus and online.",
+      "cluster": 1
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "snippet": "",
+      "excerpt": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "url": "https://www.easyuni.com/advice/universities-in-malaysia-for-international-students-3122/",
+      "domain": "easyuni.com",
+      "position": 5,
+      "text": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "cluster": 0
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "snippet": "",
+      "excerpt": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "url": "https://www.easyuni.com/advice/universities-in-malaysia-for-international-students-3122/",
+      "domain": "easyuni.com",
+      "position": 6,
+      "text": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "cluster": 0
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "snippet": "",
+      "excerpt": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "url": "https://www.easyuni.com/advice/universities-in-malaysia-for-international-students-3122/",
+      "domain": "easyuni.com",
+      "position": 7,
+      "text": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "cluster": 0
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "snippet": "",
+      "excerpt": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "url": "https://www.easyuni.com/advice/universities-in-malaysia-for-international-students-3122/",
+      "domain": "easyuni.com",
+      "position": 8,
+      "text": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "cluster": 0
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "snippet": "",
+      "excerpt": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "url": "https://www.easyuni.com/advice/universities-in-malaysia-for-international-students-3122/",
+      "domain": "easyuni.com",
+      "position": 9,
+      "text": "15 Best Universities in Malaysia for International Students (2026 Guide)",
+      "cluster": 0
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "Al-Madinah International University - Wikipedia",
+      "snippet": "",
+      "excerpt": "Al-Madinah International University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Al-Madinah_International_University#:~:text=MEDIU%20is%20licensed%20by%20the,with%20international%20level%20of%20excellence.",
+      "domain": "en.wikipedia.org",
+      "position": 10,
+      "text": "Al-Madinah International University - Wikipedia",
+      "cluster": 1
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "Al-Madinah International University - Wikipedia",
+      "snippet": "",
+      "excerpt": "Al-Madinah International University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Al-Madinah_International_University#:~:text=MEDIU%20is%20licensed%20by%20the,with%20international%20level%20of%20excellence.",
+      "domain": "en.wikipedia.org",
+      "position": 11,
+      "text": "Al-Madinah International University - Wikipedia",
+      "cluster": 1
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "Al-Madinah International University - Wikipedia",
+      "snippet": "",
+      "excerpt": "Al-Madinah International University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Al-Madinah_International_University#:~:text=MEDIU%20is%20licensed%20by%20the,with%20international%20level%20of%20excellence.",
+      "domain": "en.wikipedia.org",
+      "position": 12,
+      "text": "Al-Madinah International University - Wikipedia",
+      "cluster": 1
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "Al-Madinah International University - Wikipedia",
+      "snippet": "",
+      "excerpt": "Al-Madinah International University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Al-Madinah_International_University#:~:text=MEDIU%20is%20licensed%20by%20the,with%20international%20level%20of%20excellence.",
+      "domain": "en.wikipedia.org",
+      "position": 13,
+      "text": "Al-Madinah International University - Wikipedia",
+      "cluster": 1
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "The CEO of Al-Madinah International University Honors Outstanding ...",
+      "snippet": "",
+      "excerpt": "The CEO of Al-Madinah International University Honors Outstanding ...",
+      "url": "https://www.mediu.edu.my/ceo-of-al-madinah-international-university-honors-outstanding-employees/#:~:text=On%20Thursday%2C%20August%2029%2C%202024,outside%20of%20Malaysia%20via%20Zoom.",
+      "domain": "mediu.edu.my",
+      "position": 14,
+      "text": "The CEO of Al-Madinah International University Honors Outstanding ...",
+      "cluster": 3
+    },
+    {
+      "keyword": "university al madina international malaysia",
+      "title": "The CEO of Al-Madinah International University Honors Outstanding ...",
+      "snippet": "",
+      "excerpt": "The CEO of Al-Madinah International University Honors Outstanding ...",
+      "url": "https://www.mediu.edu.my/ceo-of-al-madinah-international-university-honors-outstanding-employees/#:~:text=On%20Thursday%2C%20August%2029%2C%202024,outside%20of%20Malaysia%20via%20Zoom.",
+      "domain": "mediu.edu.my",
+      "position": 15,
+      "text": "The CEO of Al-Madinah International University Honors Outstanding ...",
+      "cluster": 3
+    }
+  ]
+}
